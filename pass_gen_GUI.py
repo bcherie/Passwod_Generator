@@ -51,9 +51,9 @@ label_1.place(x=10, y=60)
 #сохранение выбора и установка значения по умолчанию для опции выбора - только цифры
 selected_opt = tk.StringVar(window, opt_list[0])
 offset = 0
-for lang in opt_list:
-    lang_btn = ttk.Radiobutton(text=lang, value=lang, variable=selected_opt)
-    lang_btn.place(x=10, y=80 + offset)
+for option in opt_list:
+    opt_btn = ttk.Radiobutton(text=option, value=option, variable=selected_opt)
+    opt_btn.place(x=10, y=80 + offset)
     offset += 20
 
 #кнопка генерации пароля
